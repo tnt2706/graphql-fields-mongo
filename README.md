@@ -16,7 +16,7 @@ db.inventory.find({}, { size: 1, "size.uom": 1 }); // Invalid starting in 4.4
 ## Install
 
 ```sh
-npm install graphql-fields-projection
+npm install graphql-fields-mongo
 ```
 
 ## How to
@@ -41,7 +41,7 @@ query user {
 ```
 
 ```js
-const { createSelectedFields } = require('graphql-fields-projection');
+const { createSelectedFields } = require('graphql-fields-mongo');
 
 resolve(parent, args, context, info){
   const selectedFields = createSelectedFields(info); // [ 'id', 'address', 'info.firstName', 'info.lastName' ]
