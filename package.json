@@ -1,0 +1,34 @@
+{
+  "name": "graphql-fields-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "test": "jest ./test",
+    "types": "find lib -name '*.d.ts' -delete && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnt2706/graphql-fields-mongo.git"
+  },
+  "author": "tinh tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tnt2706/graphql-fields-mongo/issues"
+  },
+  "homepage": "https://github.com/tnt2706/graphql-fields-mongo#readme",
+  "dependencies": {
+    "graphql-fields": "^2.0.3",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
