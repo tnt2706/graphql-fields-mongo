@@ -66,7 +66,7 @@ query user {
 ```
 
 ```js
-const { createSelectedFields } = require('graphql-fields-projection');
+const { createSelectedFields } = require('graphql-fields-mongo');
 
 resolve(parent, args, context, info){
   // Now you like to get more fields for further resolve: `timezone`, and `info` object
@@ -99,7 +99,7 @@ query purchase {
 ```
 
 ```js
-const { createSelectedFields } = require('graphql-fields-projection');
+const { createSelectedFields } = require('graphql-fields-mongo');
 
 resolve(parent, args, context, info){
   // Now you like to get selected fields of `buyer`
@@ -130,7 +130,7 @@ query user {
 ```
 
 ```js
-const { createSelectedFields } = require('graphql-fields-projection');
+const { createSelectedFields } = require('graphql-fields-mongo');
 
 resolve(parent, args, context, info){
   const resultArray1 = createSelectedFields(info); // [ 'id', 'address', 'info.firstName', 'info.lastName' ]
@@ -165,7 +165,7 @@ query purchase {
 ```
 
 ```js
-const { createSelectedFields, createMergedSelectedFields } = require('graphql-fields-projection');
+const { createSelectedFields, createMergedSelectedFields } = require('graphql-fields-mongo');
 
 // This is an example with Apollo Federation, but you can run with any resolvers
 __resolveReference(parent, context, info) {
